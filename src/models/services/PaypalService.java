@@ -7,12 +7,12 @@ public class PaypalService implements OnlinePaymentService {
 
     @Override
     public double paymentFee(double amount) {
-        return amount += amount * FEE;
+        return amount * FEE;
     }
 
     @Override
     public double interst(double amount, int mounths) {
-        double value = amount * INTEREST * mounths;
-        return value + amount;
+        return amount * INTEREST * mounths;
+
     }
 }
